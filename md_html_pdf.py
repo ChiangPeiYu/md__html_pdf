@@ -32,7 +32,7 @@ for filename in os.listdir(folder_path):
         md_file_path = os.path.join(folder_path, filename)
         
         # 讀取Markdown文件
-        with open(md_file_path, 'r') as f:
+        with open(md_file_path, 'r', encoding='utf-8') as f:
             md_text = f.read()
 
         # 取得輸入的Markdown檔案名稱
